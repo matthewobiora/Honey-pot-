@@ -31,7 +31,7 @@ In this project, I have set up a honeypot using T-Pot on a cloud server provided
 5.Name your server and click **Deploy Now**.
 
 
-   ![Name and Deploy Server](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/8.png?raw=true) <!-- Replace with your actual image path -->
+   ![Name and Deploy Server](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/servername.png?raw=true) <!-- Replace with your actual image path -->
 
 6.  Wait until the server status is **Running**.
 
@@ -39,17 +39,17 @@ In this project, I have set up a honeypot using T-Pot on a cloud server provided
 
 7.Click on the **View Console** icon to access your server.
 
-   ![View Console](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/9.png?raw=true) <!-- Replace with your actual image path -->
+   ![View Console](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/8.png?raw=true)    ![View Console](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/9.png?raw=true)<!-- Replace with your actual image path -->
 
-8.### Configure Firewall
+ CONFIGURE FIREWALL
 1. Click on **Settings** and create a new firewall group and then click on (manage) to create a new firewall
 
    ![Create Firewall Group](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/10.png?raw=true) <!-- Replace with your actual image path -->
 
 
-2. Go back to the firewall section, select the newly created firewall group, and update it to restrict access temporarily.
+2. Go back to the firewall section, select the newly created firewall group, and then click on it so as to update it with some rules of your choice.
 
-   ![Update Firewall](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/11.png?raw=true) <!-- Replace with your actual image path -->
+   ![Update Firewall](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/11.png?raw=true) ![Update Firewall](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/firewall%20rules.png?raw=true)<!-- Replace with your actual image path -->
 
 
 ### Install T-Pot
