@@ -23,17 +23,17 @@ Go to [Vultr](https://my.vultr.com/) and create an account.
 6. Select the 160GB SSD.
    ![Select Server Plan](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/4.png?raw=true) <!-- Replace with your actual image path -->
 7. Name your server and click **Deploy Now**.
-   ![Name and Deploy Server](images/name_deploy_server.png) <!-- Replace with your actual image path -->
+   ![Name and Deploy Server](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/8.png?raw=true) <!-- Replace with your actual image path -->
 8. Wait until the server status is **Running**.
-   ![Server Running](images/server_running.png) <!-- Replace with your actual image path -->
+   ![Server Running](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/7.png?raw=true) <!-- Replace with your actual image path -->
 9. Click on the **View Console** icon to access your server.
-   ![View Console](images/view_console.png) <!-- Replace with your actual image path -->
+   ![View Console](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/9.png?raw=true) <!-- Replace with your actual image path -->
 
 ### Configure Firewall
 1. Click on **Settings** and create a new firewall group.
-   ![Create Firewall Group](images/create_firewall_group.png) <!-- Replace with your actual image path -->
+   ![Create Firewall Group](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/10.png?raw=true) <!-- Replace with your actual image path -->
 2. Go back to the firewall section, select the newly created firewall group, and update it to restrict access temporarily.
-   ![Update Firewall](images/update_firewall.png) <!-- Replace with your actual image path -->
+   ![Update Firewall](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/11.png?raw=true) <!-- Replace with your actual image path -->
 
 ### Install T-Pot
 1. Clone the T-Pot GitHub repository:
