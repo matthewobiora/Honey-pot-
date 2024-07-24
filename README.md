@@ -1,44 +1,41 @@
-# Honeypot Project using Vultr
+# Honeypot Project
 
-## Overview
+## Introduction
+A honeypot is a security mechanism that creates a decoy system to attract cyber attackers. It serves as a trap to detect, deflect, or study hacking attempts and gather valuable information about cyber threats.
 
-This repository contains the setup and configuration files for a honeypot project deployed on Vultr. The purpose of this project is to gather information about potential attackers and their methods by simulating vulnerable services.
+## Project Overview
+In this project, I have set up a honeypot using T-Pot on a cloud server provided by Vultr. T-Pot is an all-in-one multi-honeypot platform. This README will guide you through the steps to deploy the honeypot and provide an overview of the features available in T-Pot.
 
-## Features
+## Deployment Steps
 
-- **Deployment on Vultr:** Utilizes Vultr's cloud infrastructure for hosting the honeypot.
-- **Honeypot Configuration:** Includes setup scripts and configurations to deploy various honeypot services.
-- **Data Collection:** Logs and collects information on attacks, intrusions, and malicious activities targeting the honeypot.
+### Sign up for Vultr
+Go to [Vultr](https://my.vultr.com/) and create an account.
 
-## Requirements
+### Deploy a New Server
+1. Click on **Deploy** to create a new server.
+2. Select **Cloud Compute - Shared CPU**.
+   ![Cloud Compute - Shared CPU](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/1.png?raw=true) <!-- Replace with your actual image path -->
+3. Choose a server location closest to you (e.g., New York).
+   ![Select Server Location](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/2.png?raw=true) <!-- Replace with your actual image path -->
+4. Select an operating system (e.g., Ubuntu).
+   ![Select Server Image](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/3.png?raw=true) <!-- Replace with your actual image path -->
+5. Choose the server plan (e.g., Regular Cloud Compute).
+6. Select the 160GB SSD.
+   ![Select Server Plan](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/4.png?raw=true) <!-- Replace with your actual image path -->
+7. Name your server and click **Deploy Now**.
+   ![Name and Deploy Server](images/name_deploy_server.png) <!-- Replace with your actual image path -->
+8. Wait until the server status is **Running**.
+   ![Server Running](images/server_running.png) <!-- Replace with your actual image path -->
+9. Click on the **View Console** icon to access your server.
+   ![View Console](images/view_console.png) <!-- Replace with your actual image path -->
 
-- Vultr account with sufficient credits or payment method set up.
-- Basic knowledge of Linux and system administration.
-- Understanding of security practices for handling potentially malicious data.
+### Configure Firewall
+1. Click on **Settings** and create a new firewall group.
+   ![Create Firewall Group](images/create_firewall_group.png) <!-- Replace with your actual image path -->
+2. Go back to the firewall section, select the newly created firewall group, and update it to restrict access temporarily.
+   ![Update Firewall](images/update_firewall.png) <!-- Replace with your actual image path -->
 
-## Getting Started
-
-### Setting Up the Environment
-
-1. **Sign up for Vultr:** Create an account on [Vultr](https://www.vultr.com/) if you haven't already.
-
-2. **Deploying the Honeypot:**
-   - Choose a suitable Vultr instance type and deploy a new server.
-   - Use the provided setup scripts (`setup.sh`, `configurations/`) to configure and deploy the honeypot services.
-
-### Configuration
-
-- Modify `configurations/` directory to adjust honeypot services and logging configurations as needed.
-
-### Data Collection
-
-- Access logs and collected data from the honeypot to analyze attack patterns and behaviors.
-
-## Contributing
-
-Contributions are welcome! If you have ideas for improvements, feature requests, or bug reports, please open an issue or submit a pull request.
-
-
-
-
-
+### Install T-Pot
+1. Clone the T-Pot GitHub repository:
+   ```bash
+   git clone https://github.com/telekom-security/tpotce
