@@ -124,10 +124,12 @@ To allow public access to your honeypot, update the firewall rules to permit tra
 
 ### Kibana
 ![Create Firewall Group](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/17.png?raw=true)
+ ![Create Firewall Group](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/18.png?raw=true)  
 - Provides dynamic dashboards and visualizations, showing attack metrics, sources, and other critical information.
-  ![Create Firewall Group](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/20.png?raw=true)  ![Create Firewall Group](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/19.png?raw=true)
+  ![Create Firewall Group](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/20.png?raw=true)
+   ![Create Firewall Group](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/last.png?raw=true)
   - **Discover:** Practice query skills and learn to use Kibana effectively.
-  ![Create Firewall Group](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/17.png?raw=true)   ![Create Firewall Group](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/18.png?raw=true)  
+   ![Create Firewall Group](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/19.png?raw=true) 
   - **Dashboards:** Visualize attack data, including source IPs and attack counts.
 
 ### Spiderfoot
