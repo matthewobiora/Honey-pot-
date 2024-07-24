@@ -52,7 +52,88 @@ In this project, I have set up a honeypot using T-Pot on a cloud server provided
    ![Update Firewall](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/11.png?raw=true) ![Update Firewall](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/firewall%20rules.png?raw=true)<!-- Replace with your actual image path -->
 
 
-### Install T-Pot
-1. Clone the T-Pot GitHub repository:
-   ```bash
-   git clone https://github.com/telekom-security/tpotce
+
+
+## Installation
+
+### Clone the T-Pot GitHub Repository
+1. Open a terminal and run:
+    ```bash
+    git clone https://github.com/telekom-security/tpotce
+    ```
+
+### Navigate to the `tpotce` Directory
+2. Change into the `tpotce` directory:
+    ```bash
+    cd tpotce
+    ```
+
+### Run the Installer
+3. Execute the installation script:
+    ```bash
+    ./install.sh
+    ```
+
+   ⚠️ **Installer Details:**
+   Depending on your Linux distribution, the installer will:
+   - Change the SSH port to `tcp/64295`
+   - Disable the DNS Stub Listener to avoid port conflicts with honeypots
+   - Set SELinux to Monitor Mode
+   - Set the firewall target for the public zone to `ACCEPT`
+   - Add Docker's repository and install Docker
+   - Install recommended packages
+   - Remove packages known to cause issues
+   - Add the current user to the Docker group (allow Docker interaction without `sudo`)
+   - Add `dps` and `dpsw` aliases (`grc docker ps -a`, `watch -c "grc --colour=on docker ps -a"`)
+   - Add `la`, `ll`, and `ls` aliases (for `exa`, an improved `ls` command)
+   - Add `mi` (for `micro`, a great alternative to `vi` and/or `nano`)
+   - Display open ports on the host (compare with T-Pot required ports)
+   - Add and enable `tpot.service` to `/etc/systemd/system` so T-Pot can automatically start and stop
+
+   Follow the installer instructions; you will have to enter your user (sudo or root) password at least once. Check the installer messages for errors and open ports that might cause port conflicts.
+
+### Reboot Your Server
+4. Reboot the server to complete the installation:
+    ```bash
+    sudo reboot
+    ```
+
+## Access the Honeypot
+
+After the reboot, T-Pot will present you with the IP, web, and admin details. Access the web interface using the provided IP and port via HTTPS. Bypass the warning page by clicking Advanced and use your credentials to log in.
+
+## Modifying Firewall Rules
+
+To allow public access to your honeypot, update the firewall rules to permit traffic to the necessary ports.
+
+## T-Pot Features Overview
+![Create Firewall Group](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/12.png?raw=true)
+
+### Attack Map
+![Create Firewall Group](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/14.png?raw=true)
+
+- Visualizes the origin of attacks, the honeypots capturing the data, and provides insights into the top hits.
+
+### CyberChef
+![Create Firewall Group](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/15.png?raw=true)
+- A web-based tool for analyzing and decoding data. It simplifies complex data transformations.
+
+### Elasticvue
+![Create Firewall Group](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/16.png?raw=true)
+- A GUI for managing and inspecting Elasticsearch indices, offering a user-friendly interface for data analysis.
+
+### Kibana
+![Create Firewall Group](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/17.png?raw=true)
+- Provides dynamic dashboards and visualizations, showing attack metrics, sources, and other critical information.
+  ![Create Firewall Group](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/20.png?raw=true)  ![Create Firewall Group](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/19.png?raw=true)
+  - **Discover:** Practice query skills and learn to use Kibana effectively.
+  ![Create Firewall Group](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/17.png?raw=true)   ![Create Firewall Group](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/18.png?raw=true)  
+  - **Dashboards:** Visualize attack data, including source IPs and attack counts.
+
+### Spiderfoot
+![Create Firewall Group](https://github.com/matthewobiora/Risk-Assessment-Report/blob/main/22.png?raw=true)
+- A reconnaissance tool that automates the process of gathering intelligence on IP addresses, domain names, email addresses, and other entities.
+
+## Conclusion
+
+This project has significantly improved my cybersecurity skills, especially in setting up and managing honeypots, analyzing attack data, and using advanced tools like Kibana and CyberChef.
